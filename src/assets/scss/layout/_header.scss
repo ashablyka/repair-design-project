@@ -1,0 +1,84 @@
+.header {
+    background: $bg_color;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    @media (max-width: 600px) {
+        padding: 14px 0;
+    }
+}
+
+.logo {
+    font-family: FuturaDemiC;
+    font-size: 1.4rem;
+    color: $main_color;
+    line-height: 28px;
+    text-transform: uppercase;
+    @media (max-width: 600px) {
+        font-size: 1.2rem;
+    }
+}
+
+.nav {
+    @media (max-width: 1140px) {
+        display: none;
+    }
+}
+
+.nav__list {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav__item {
+    margin-right: 47px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.nav__link {
+    font-family: FuturaBookC;
+    font-size: 1.4rem;
+    color: #ffffff;
+    transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    &:hover, &:focus, &:active {
+        color: $main_color;
+    }
+}
+
+.phone {
+    font-family: FuturaDemiC;
+    font-size: 1.4rem;
+    color: $main_color;
+    text-decoration: underline;
+    @media (max-width: 600px) {
+        font-size: 1.2rem;
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+.header__button {
+    background: $main_color;
+    color: #ffffff;
+    border-radius: 2px;
+    font-family: FuturaDemiC;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    border: 0;
+    padding: 12px 32px;
+    cursor: pointer;
+    &:hover, &:focus, &:active {
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+        background: darken($main_color, 5);
+    }
+    @media (max-width: 1330px) {
+        display: none;
+    }
+}

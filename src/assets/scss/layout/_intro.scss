@@ -1,0 +1,72 @@
+.intro {
+    display: flex;
+    height: 755px;
+    background: $bg_color;
+    @media (max-width: 600px) {
+        height: 476px;
+    }
+}
+
+.intro__aside-wrapper {
+    width: 80px;
+}
+
+.intro__aside {
+    display: flex;
+    transform: rotate(90deg) translateX(250px);
+}
+
+.intro__instagram {
+    color: $main_color;
+    font-family: FuturaDemiC;
+    font-size: 1.4rem;
+    padding-right: 64px;
+    position: relative;
+    &:hover, &:focus, &:active {
+        padding-right: 68px;
+    }
+}
+
+.intro__instagram::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50px;
+    height: 2px;
+    background: $main_color;
+}
+
+.intro__content-wrapper {
+    width: calc(100% - 80px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                      url(../img/intro.png);
+    background-position: center;
+    background-size: cover, 100% auto;
+    background-repeat: no-repeat;
+}
+
+.intro__content {
+    padding: 194px 620px 200px 60px;
+}
+
+.intro__heading {
+    font-family: Yeseva One;
+    font-size: 4rem;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.intro__heading-city {
+    color: $main_color;
+}
+
+.intro__desc {
+    font-family: FuturaBookC;
+    font-size: 22px;
+    line-height: 30px;
+    color: #ffffff;
+}

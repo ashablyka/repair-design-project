@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+h1, h2, p {
+    margin: 0;
+}
