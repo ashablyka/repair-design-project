@@ -46,7 +46,7 @@
     font-family: FuturaBookC;
     font-size: 1.4rem;
     color: #ffffff;
-    transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: $color_transition;
     &:hover, &:focus, &:active {
         color: $main_color;
     }
@@ -61,24 +61,5 @@
         font-size: 1.2rem;
         color: #ffffff;
         text-decoration: none;
-    }
-}
-
-.header__button {
-    background: $main_color;
-    color: #ffffff;
-    border-radius: 2px;
-    font-family: FuturaDemiC;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    border: 0;
-    padding: 12px 32px;
-    cursor: pointer;
-    &:hover, &:focus, &:active {
-        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-        background: darken($main_color, 5);
-    }
-    @media (max-width: 1330px) {
-        display: none;
     }
 }

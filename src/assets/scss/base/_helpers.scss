@@ -10,3 +10,9 @@
         margin: 0 18px;
     }
 }
+
+@media (max-width: 680px) {
+    .mobile-hidden {
+        display: none;
+    }
+}

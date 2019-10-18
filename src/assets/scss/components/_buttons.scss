@@ -1,0 +1,28 @@
+.header__button {
+    @extend %button;
+    padding: 12px 32px;
+    @media (max-width: 1330px) {
+        display: none;
+    }
+}
+
+.intro__calc {
+    @extend %button;
+    margin-right: 20px;
+    padding: 19px 42px;
+    @media (max-width: 680px) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 26px;
+    }
+}
+
+.intro__submit {
+    @extend %button;
+    padding: 18px 22px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    @media (max-width: 680px) {
+        width: 100%;
+    }
+}
