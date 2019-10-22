@@ -31,16 +31,15 @@
     &:hover, &:focus, &:active {
         padding-right: 68px;
     }
-}
-
-.intro__instagram::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 50px;
-    height: 2px;
-    background: $main_color;
+    &::after {
+        content: '';
+        top: 50%;
+        right: 0;
+        width: 50px;
+        height: 2px;
+        background: $main_color;
+        position: absolute;
+    }
 }
 
 .intro__content-wrapper {
@@ -120,6 +119,7 @@
     color: #ffffff; 
     background: url(../img/scroll_down.svg) right 44px center no-repeat $bg_color;
     &:hover, &:focus, &:active {
+        border: 1px solid $main_color;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
         cursor: pointer;
     }
