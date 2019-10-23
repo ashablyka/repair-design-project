@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="dist/style.css">
     <script type="text/javascript" src="dist/bundle.js"></script>
-    <title>Document</title>
+    <title>repair-design-project</title>
 </head>
 
 <body>
@@ -114,8 +114,39 @@
                     </div>
                 </div>
             </section>
-            <div class="video">video</div>
-            <div class="broadcast-form">broadcast-form</div>
+            <section class="broadcast">
+                <h2 class="broadcast__heading">online control</h2>
+                <div class="broadcast__video-wrapper">
+                    <iframe class="broadcast__video" src="https://www.youtube-nocookie.com/embed/fafEHMnFe3g"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <p class="broadcast__desc">At each facility, a camera is installed that broadcasts the progress of work
+                    on the clock. At&nbsp;any time, you can go to our website and monitor the progress of work in your
+                    apartment. You can watch the live broadcast from one of our facilities!
+                    Leave&nbsp;a&nbsp;request&nbsp;below and you will receive a link to the broadcast.</p>
+                <div class="broadcast__form-wrapper">
+                    <form class="broadcast__form" action="#!">
+                        <label class="broadcast__label broadcast__name-label">
+                            Name
+                            <input class="broadcast__name-input text-input" type="text" name="name" id="name"
+                                placeholder="What is your name:" required>
+                        </label>
+                        <label class="broadcast__label broadcast__phone-label">
+                            <span class="mobile-hidden">Phone</span>
+                            <span class="desktop-hidden">Number</span>
+                            <input class="broadcast__phone-input text-input" type="tel" name="tel" id="tel"
+                                placeholder="Your phone number:" required>
+                        </label>
+                        <label class="broadcast__checkbox-label">
+                            <input class="broadcast__checkbox-input" type="checkbox" name="agree" id="agree" required>
+                            <span class="broadcast__checkbox"></span>
+                            I agree to the processing of personal data
+                        </label>
+                        <button class="broadcast__submit-button" type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
             <section class="types-cards">
                 <h2 class="types-cards__heading">Types of Repair</h2>
                 <div class="types-cards__cards">

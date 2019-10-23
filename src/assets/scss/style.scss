@@ -18,21 +18,14 @@
 @import
   'layout/header',
   'layout/intro',
-  'layout/projects';
+  'layout/projects',
+  'layout/broadcast';
 
 // Components
 @import
   'components/buttons';
 
 // My styles
-
-.video {
-    height: 820px;
-    background: #8a90a3;
-    @media (max-width: 600px) {
-        height: 320px;
-    }
-}
 
 .broadcast-form {
     height: 560px;
